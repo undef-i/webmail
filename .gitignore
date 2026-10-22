@@ -1,0 +1,10 @@
+ui/node_modules/
+ui/dist/
+data/
+*.db
+*.db-shm
+*.db-wal
+server.key
+/webmail
+web/node_modules/
+web/dist/
