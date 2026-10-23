@@ -10,6 +10,7 @@ import (
 	"path/filepath"
 
 	"webmail/internal/api"
+	"webmail/internal/proton"
 	"webmail/internal/store"
 	syncmgr "webmail/internal/sync"
 )
@@ -25,6 +26,7 @@ func main() {
 	if err := os.MkdirAll(*dataDir, 0o700); err != nil {
 		log.Fatalf("create data dir: %v", err)
 	}
+	proton.Init(*dataDir)
 	st, err := store.Open(filepath.Join(*dataDir, "webmail.db"))
 	if err != nil {
 		log.Fatalf("open store: %v", err)
