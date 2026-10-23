@@ -14,6 +14,7 @@ import (
 	syncmgr "webmail/internal/sync"
 )
 
+//go:embed all:web/dist
 var uiEmbed embed.FS
 
 func main() {
