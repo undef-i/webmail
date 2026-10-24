@@ -8,3 +8,4 @@ server.key
 /webmail
 web/node_modules/
 web/dist/
+.deploy/
