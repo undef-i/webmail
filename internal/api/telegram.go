@@ -383,7 +383,7 @@ type tgItem struct {
 const tgWebmailBase = "https://webmail.nedifinita.com"
 
 func tgDeepLink(id int64) string {
-	return fmt.Sprintf("%s/#/mail/%d", tgWebmailBase, id)
+	return fmt.Sprintf("%s/?m=%d", tgWebmailBase, id)
 }
 
 func rtBold(s string) any {
